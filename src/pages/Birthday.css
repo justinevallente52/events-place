@@ -1,0 +1,62 @@
+/* Birthday.css */
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  
+  .venue-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Change space-around to center */
+    gap: 20px;
+    padding: 20px;
+    align-items: center; /* Centers vertically */
+    justify-items: center; /* Centers horizontally */
+    max-width: 100%;
+    margin: 0 auto; /* Ensure container is centered on the page */
+  }
+  
+  .venue-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center; /* Center text within the card */
+  }
+  
+  .venue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .venue-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .venue-card h2 {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .venue-card p {
+    padding: 0 10px 10px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .venue-card .price {
+    font-weight: bold;
+    color: #00db49;
+    margin-top: 10px;
+  }
+  
+
+  

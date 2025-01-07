@@ -1,0 +1,167 @@
+.about {
+  padding: 20px;
+  background-color: #B5CC9A;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Circles */
+.floating-circle {
+  position: fixed;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  /* Semi-transparent white */
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+  /* Ensure they are behind the content */
+}
+
+.floating-circle:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  top: 80%;
+  bottom: 50%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-circle:nth-child(2) {
+  width: 120px;
+  height: 120px;
+  top: 60%;
+  left: 80%;
+  
+  animation-delay: 1s;
+}
+
+.floating-circle:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  top: 6%;
+  left: 35%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-50px) rotate(180deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.about h1 {
+  text-align: center;
+  color: #718355;
+  font-size: 5rem;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.about h3 {
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+.about h2 {
+  color: #718355;
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+.about .columns-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.about .column {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #718355;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.about ul li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.about strong {
+  font-weight: bold;
+  color: #718355;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 15px;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p,
+  .about ul li {
+    font-size: 1rem;
+  }
+
+     .about .columns-container {
+       flex-direction: column;
+       gap: 20px;
+     }
+
+  .about .column {
+    padding: 10px;
+  }
+}
